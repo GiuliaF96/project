@@ -1,0 +1,57 @@
+num : int  = 2
+num_f: float  = 2.8 
+boo : bool = False
+num_str : str = "2.8"
+
+
+print(type(num))
+print(type(num_f))
+print(type(boo))
+print(type(str))
+
+
+import sys 
+
+a : int = 500
+ 
+
+b : int = a
+
+#print(sys.getrefcount(a))
+
+#print(sys.platform)
+ 
+#print(dir(sys))
+
+
+from psutil import cpu_stats
+
+print(cpu_stats())
+
+#print(dir(psutil))
+
+#print(psutil.cpu_percent(interval=1))
+
+
+#funzioni built in 
+
+nome : str = "Pippo"
+
+print(len(nome))
+
+
+int_val: int = 3 
+print(type(int_val))
+
+print(type(float(int_val)))
+
+str_val: str = "30"
+
+print(type(int(str_val)))
+print(str_val)
+
+
+codice = input("inserire codice di 3 cifre: ")
+print(codice)
+
+
