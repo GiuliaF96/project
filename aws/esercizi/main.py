@@ -25,14 +25,12 @@ def mostra_domanda() -> None:
     )
 
 
-
-    def raccogli_risposta() -> str:
+def raccogli_risposta() -> str:
         risposta: str = input("Inserisci la tua scelta: ")
         return risposta
     
-    #mostra_domanda ()
+     
+risposta_da_validare: str = raccogli_risposta()
+risposta_validata: bool = valida_scelta(risposta_da_validare)
 
-   risposta_da_validare: str = raccogli_risposta()
-risposta_validata: bool= valida_scelta(risposta_da_validare)
-
-    print(risposta_validata)
+print(risposta_validata)
