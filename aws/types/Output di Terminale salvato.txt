@@ -1,0 +1,133 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+$touch shebang.py        
+$clear
+
+$nano shebang.py
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  GNU nano 8.7                                                            shebang.py                                                             Modificato  
+ 1 #!/usr/bin/python3
+ 2
+ 3 #===========================
+ 4 #=== Esercizio 1
+ 5 #==========================
+ 6
+ 7 server_list: list [srt] = ["web01", "db01", "cache01"]
+ 8
+ 9 server_list.append("backup01")
+10
+11 server_list.insert(0,"proxy01")
+12
+13 server_list.remove("cache01")
+14
+15
+16 print(server_list)
+17 print(len(server_list))
+18
+19
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Guida         ^O Salva         ^F Cerca         ^K Taglia        ^T Esegui        ^C Posizione     M-U Annulla      M-A Selez.       M-] Parentesi
+^X Esci          ^R Inserisci     ^\ Sostituisci   ^U Incolla       ^J Giustifica    ^/ Vai a riga    M-E Ripeti       M-6 Copia        ^B Cerca ind.
