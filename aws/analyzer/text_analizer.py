@@ -9,3 +9,5 @@ def frequenza_caratteri(testo: str) -> dict[str, int]: #restituisce un dizionari
         else:
             frequenza[char] = 1
     return frequenza
+
+__all__ = ['conta_caratteri', 'frequenza_caratteri'] 
