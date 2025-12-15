@@ -3,6 +3,18 @@ from requests.exceptions import  HTTPError, ConnectionError, Timeout, RequestExc
 
 
 BASE_URL: str = "https://api.escuelajs.co/api/v1/products"
+
+"""def get_prodotto(URL: str)->dict[str,any]:
+    if URL is None:
+        raise ValueError(f"problema con la response:{e}")
+    
+    try: 
+        response: Response= get_data()
+        return response.json()
+    except exceptions("L'URL non può essere vuoto!")"""
+
+
+
 def get_data(URL: str) -> dict[str, any] | list[dict[str, any]]:
     if URL is None: 
         raise ValueError("L'URL non può essere vuoto!")

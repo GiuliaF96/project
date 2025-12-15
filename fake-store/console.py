@@ -18,6 +18,9 @@ def scelta_menu() -> None:
         products_data = get_data(BASE_URL)
         products = [product_model(prod) for prod in products_data]
         print_lista_prodotti(products)
+        
+        print_prodotto(product)
+
     if scelta == "2":
         try: 
             id = scelta_prodotto()

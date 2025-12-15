@@ -7,14 +7,14 @@ from console import scelta_menu, scelta_prodotto
     
 def main() -> None:
     scelta_menu()
-   
-    try: 
+
+""" try: 
         id = input("Inserisci l'id del prdotto da visualizzare:")
         product= product_model(get_data(f"{BASE_URL}/{id}"))
         print_prodotto(product)
 
     except Exception as e:
-        print(f"Errore: {e}")
+        print(f"Errore: {e}")"""
 
 
 if __name__ == "__main__":
