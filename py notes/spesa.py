@@ -50,10 +50,10 @@ def log_message(text: str, type):
             icon = "⚠️"
 
         case "ADD":
-            icon =   "✅"
+            icon =   "🛒"
 
         case "PRESENTE":
-            icon =   "⚠️"
+            icon =   "✅"
 
         case "NON":
              icon = "⚠️"
@@ -63,14 +63,28 @@ def log_message(text: str, type):
 
     print(f"{icon}-{text}") 
 
+#def menu(scelta:int)-> bool:
+    #print("Seleziona scelta:\n1.Aggiungi prodotto\n2.Esci")
+    #if scelta == 1:
+     #   get_prodotto_formattato()
+    #else: 
+       # return False
+        
 
 def main():
     
+    
     lista_spesa : list[str] = ["pane","pasta", "uova","latte", "biscotti"]
     lista_carrello : list[str] = []
-
+   
     while is_lista_carrello_filled(lista_carrello):
+       # menu
+       # scelta = int
+       # if not menu(scelta):
+        #  break
+
         prodotto = get_input_utente("Inserisci un un prodotto da aggiungere al carrello: ")
+        
         if not prodotto:     
             log_message("Il prodotto non deve essere vuoto", "ALERT")
 
